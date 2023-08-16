@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The multi step form</title>
+  <style>
+    * {
+      background-color: #6B59D3;
+      margin: 0%;
+      padding: 0%;
+    }
+
+    body,
+    h1,
+    h2,
+    p,
+    hr {
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      background-color: white;
+    }
+
+    .mainContainer {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 50px;
+      height: 500px;
+      width: 500px;
+      margin: 100px auto;
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      background-color: white;
+    }
+
+    label {
+      display: block;
+      text-align: center;
+      justify-content: center;
+      margin: 0%;
+      background-color: white;
+
+    }
+
+    input {
+      display: block;
+      background-color: white;
+      width: 250px;
+      height: 30px;
+      border-radius: 10px;
+      padding: 10px;
+      /* margin-bottom: 50%; */
+      /* padding-bottom: 50%; */
+
+    }
+
+    #submit {
+      text-align: right;
+      /* display: block; */
+      float: right;
+
+    }
+
+    #password {
+      /* display: block; */
+      padding-bottom: 0%;
+    }
+
+    /* label[for='mail'] {
+    display: block;
+    text-align: center;
+    } */
+    input[id='submit'] {
+      box-sizing: border-box;
+      width: 60px;
+      height: 37px;
+      padding: 10px;
+      background: #6B59D3;
+      color: white;
+    }
+
+    .head {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      margin-bottom: 30px;  
+    }
+
+    hr {
+      flex: 1;
+      width: 100px;
+      height: 2px;
+      /* background-color: black; */
+      display: flex;
+      /* flex-direction: row; */
+      align-items: center;
+      justify-content: center;
+      color: white;
+      margin-right: 25px;
+      margin-left: 10px;
+    }
+
+    #l1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    html .circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      color: white;
+      font-size: 20px;
+
+    }
+    #circle2{
+      background-color: rgb(199, 193, 193);
+      /* color: gray; */
+    }
+    #circle3{
+      background-color: rgb(199, 193, 193);
+      /* color: gray; */
+    }
+    #l2{
+      background-color: rgb(199, 193, 193);
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mainContainer">
+    <div class="head">
+      <div class="circle" id="circle1">1</div>
+      <hr id="l1">
+      <div class="circle" id="circle2">2</div>
+      <hr id="l2">
+      <div class="circle" id="circle3">3</div>
+    </div>
+
+    <h1>SIGNUP INFO</h1>
+    <form action="form2.html">
+      <label for="mail">Email Address</label>
+      <br>
+      <input type="text" id="mail" name="mail" required>
+      <br>
+      <label for="password">Password</label>
+      <br>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <label for="Password">Confirm password</label>
+      <br>
+      <input type="password" id="password2" name="password" required>
+      <br>
+      <input type="submit" value="Next &#8594" id="submit">
+    </form>
+  </div>
+</body>
+
+</html>
